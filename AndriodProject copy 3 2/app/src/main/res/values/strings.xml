@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">Unit Conversion App</string>
+    <string name="tab_page1">Unit Selection</string>
+    <string name="tab_page2">Unit Conversion</string>
+    <string name="tab_page3">Add Conversion</string>
+    <string name="DistanceLabel">Distance</string>
+    <string name="UnitCategoryLabel">Unit Type:</string>
+    <string name="StartUnitLabel">Step 2. Select Unit to Convert From:</string>
+    <string name="UnitCategoryLab">Step 1. Select Unit Category:</string>
+    <string name="ConvertedUnitLabel">Step 3: Select Unit to Convert To:</string>
+    <string name="clearButton" />
+    <string name="ClearButton">Clear</string>
+    <string name="rotateButton">Rotate</string>
+    <string name="tab_page4">Remove Conversion</string>
+    <string name="categoryLabel">Category place holder</string>
+    <string name="button7">7</string>
+    <string name="button8">8</string>
+    <string name="button9">9</string>
+    <string name="button4">4</string>
+    <string name="button5">5</string>
+    <string name="button6">6</string>
+    <string name="button3">3</string>
+    <string name="button2">2</string>
+    <string name="button1">1</string>
+    <string name="button0">0</string>
+    <string name="buttonDot">.</string>
+    <string name="buttonDel">DEL</string>
+    <string name="addConvNameLabel">Step 1. Enter Conversion Name:</string>
+    <string name="addStartUnitLabel">Step 2: Enter Unit From:</string>
+    <string name="addConvToLabel">Step 3: Enter Unit To:</string>
+    <string name="addConvMultiLabel">Step 4: Enter Multiplier:</string>
+    <string name="clearAllButton">Clear</string>
+    <string name="addConversion">Add</string>
+    <string name="removeLabel">Enter Conversion To Remove:</string>
+    <string name="removeButton">Remove</string>
+    <string name="nightMode">Night</string>
+
+</resources>

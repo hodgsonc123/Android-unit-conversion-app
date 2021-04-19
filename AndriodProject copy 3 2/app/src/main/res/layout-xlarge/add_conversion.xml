@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fragBackground">
+
+    <EditText
+        android:id="@+id/editTextAddConversionName"
+        android:layout_width="300dp"
+        android:layout_height="55dp"
+        android:ems="10"
+        android:maxLength="30"
+        android:textSize="30sp"
+        android:hint="e.g. inch to foot"
+        android:textColorHint="@color/hintColour"
+        android:textColor="@color/labelColour"
+        app:layout_constraintBottom_toTopOf="@+id/addConversionStartUnitNameLabel"
+        app:layout_constraintStart_toStartOf="@+id/addConversionStartUnitNameLabel"
+        app:layout_constraintTop_toBottomOf="@+id/addConversionNameLabel" />
+
+    <EditText
+        android:id="@+id/editTextAddConversionStartUnit"
+        android:layout_width="300dp"
+        android:layout_height="55dp"
+        android:ems="10"
+        android:maxLength="15"
+        android:textSize="30sp"
+        android:hint="e.g. inch"
+        android:textColorHint="@color/hintColour"
+        android:textColor="@color/labelColour"
+        app:layout_constraintBottom_toTopOf="@+id/addConversionConvertedUnitNameLabel"
+        app:layout_constraintStart_toStartOf="@+id/addConversionConvertedUnitNameLabel"
+        app:layout_constraintTop_toBottomOf="@+id/addConversionStartUnitNameLabel" />
+
+    <EditText
+        android:id="@+id/editTextAddConversionConvertedUnit"
+        android:layout_width="300dp"
+        android:layout_height="55dp"
+        android:ems="10"
+        android:maxLength="15"
+        android:textSize="30sp"
+        android:hint="e.g. foot"
+        android:textColorHint="@color/hintColour"
+        android:textColor="@color/labelColour"
+        app:layout_constraintBottom_toTopOf="@+id/addConversionMultiplier"
+        app:layout_constraintStart_toStartOf="@+id/addConversionMultiplier"
+        app:layout_constraintTop_toBottomOf="@+id/addConversionConvertedUnitNameLabel" />
+
+    <EditText
+        android:id="@+id/editTextAddConversionMultiplier"
+        android:layout_width="300dp"
+        android:layout_height="55dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:maxLength="10"
+        android:textSize="30sp"
+        android:hint="e.g. 0.0833333"
+        android:textColorHint="@color/hintColour"
+        android:textColor="@color/labelColour"
+        app:layout_constraintBottom_toTopOf="@+id/clearAllButton"
+        app:layout_constraintStart_toStartOf="@+id/clearAllButton"
+        app:layout_constraintTop_toBottomOf="@+id/addConversionMultiplier" />
+
+    <TextView
+        android:id="@+id/addConversionNameLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/addConvNameLabel"
+        android:textSize="30sp"
+        android:textColor="@color/labelColour"
+        app:layout_constraintBottom_toTopOf="@+id/editTextAddConversionName"
+        app:layout_constraintStart_toStartOf="@+id/editTextAddConversionName"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/addConversionStartUnitNameLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/addStartUnitLabel"
+        android:textSize="30sp"
+        android:textColor="@color/labelColour"
+        app:layout_constraintBottom_toTopOf="@+id/editTextAddConversionStartUnit"
+        app:layout_constraintStart_toStartOf="@+id/editTextAddConversionStartUnit"
+        app:layout_constraintTop_toBottomOf="@+id/editTextAddConversionName" />
+
+    <TextView
+        android:id="@+id/addConversionConvertedUnitNameLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/addConvToLabel"
+        android:textSize="30sp"
+        android:textColor="@color/labelColour"
+        app:layout_constraintBottom_toTopOf="@+id/editTextAddConversionConvertedUnit"
+        app:layout_constraintStart_toStartOf="@+id/editTextAddConversionConvertedUnit"
+        app:layout_constraintTop_toBottomOf="@+id/editTextAddConversionStartUnit" />
+
+    <TextView
+        android:id="@+id/addConversionMultiplier"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/addConvMultiLabel"
+        android:textSize="30sp"
+        android:textColor="@color/labelColour"
+        app:layout_constraintBottom_toTopOf="@+id/editTextAddConversionMultiplier"
+        app:layout_constraintStart_toStartOf="@+id/editTextAddConversionMultiplier"
+        app:layout_constraintTop_toBottomOf="@+id/editTextAddConversionConvertedUnit" />
+
+    <Button
+        android:id="@+id/clearAllButton"
+        android:layout_width="110dp"
+        android:layout_height="70dp"
+        android:text="@string/clearAllButton"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/addButton"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextAddConversionMultiplier" />
+
+    <Button
+        android:id="@+id/addButton"
+        android:layout_width="110dp"
+        android:layout_height="70dp"
+        android:text="@string/addConversion"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/clearAllButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/clearAllButton"
+        app:layout_constraintTop_toTopOf="@+id/clearAllButton" />
+</androidx.constraintlayout.widget.ConstraintLayout>
