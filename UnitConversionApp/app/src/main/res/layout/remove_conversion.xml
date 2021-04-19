@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fragBackground">
+
+    <EditText
+        android:id="@+id/editTextRemoveConversion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="e.g. inch to foot"
+        android:textColor="@color/labelColour"
+        android:textColorHint="@color/hintColour"
+        app:layout_constraintBottom_toTopOf="@+id/removeButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/removeLabel" />
+
+    <TextView
+        android:id="@+id/removeLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:text="@string/removeLabel"
+        android:textSize="20sp"
+        android:textColor="@color/labelColour"
+        app:layout_constraintEnd_toEndOf="@+id/editTextRemoveConversion"
+        app:layout_constraintStart_toStartOf="@+id/editTextRemoveConversion"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/removeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="300dp"
+        android:text="@string/removeButton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/editTextRemoveConversion"
+        app:layout_constraintStart_toStartOf="@+id/editTextRemoveConversion"
+        app:layout_constraintTop_toBottomOf="@+id/editTextRemoveConversion" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
